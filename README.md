@@ -1,46 +1,16 @@
-// SQLpage.js
+# SQL Solutions for South African Businesses
 
-// Import necessary libraries
-const mysql = require('mysql');
+This repository contains the `SQLSolutionPage` component, which provides various SQL solutions tailored for South African businesses.
 
-// Create a connection to the database
-const connection = mysql.createConnection({
-    host: 'localhost',       // Replace with your database host
-    user: 'root',            // Replace with your database username
-    password: '',            // Replace with your database password
-    database: 'example_db'   // Replace with your database name
-});
+## Description
 
-// Connect to the database
-connection.connect((err) => {
-    if (err) {
-        console.error('Error connecting to the database:', err);
-        return;
-    }
-    console.log('Connected to the database.');
-});
+The `SQLSolutionPage` component is designed to offer SQL solutions across various industries such as Financial Services, Retail & E-commerce, and Agriculture. It provides industry-specific benefits, key advantages, and pricing plans to help businesses in South Africa leverage SQL technology effectively.
 
-// Example function to perform a simple query
-const fetchData = () => {
-    const query = 'SELECT * FROM example_table'; // Replace with your SQL query
+## Installation
 
-    connection.query(query, (err, results, fields) => {
-        if (err) {
-            console.error('Error executing query:', err);
-            return;
-        }
-        console.log('Query results:', results);
-    });
-};
+To use the `SQLSolutionPage` component in your project, follow these steps:
 
-// Call the function to fetch data
-fetchData();
-
-// Close the connection
-connection.end((err) => {
-    if (err) {
-        console.error('Error closing the connection:', err);
-        return;
-    }
-    console.log('Connection closed.');
-});
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sudz/SQLpage.js.git
+   cd SQLpage.js
